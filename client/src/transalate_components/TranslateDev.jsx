@@ -136,7 +136,7 @@ const TranslateDev = () => {
 
   const verifyUser = async () => {
     try {
-      if (group === "Customer" || group === "Admin") {
+      if (group === "Customer" || group === "Admin" || group === "Operations") {
         console.log("Access granted");
       } else {
         console.log("Access denied");
