@@ -1,0 +1,10 @@
+userCreationToken: 
+this is used for verification for creating user and is only used for postman operations
+to use this run key.js get the key and use that key in Authrization: Bearer <key> 
+
+cookie: 
+this is used for verification for login.
+once user is logged in other routes are unlocked. 
+
+key:
+used for userCreationToken generation. 
