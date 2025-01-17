@@ -154,17 +154,7 @@ const App = () => {
             <div className="h-[1px] sm:w-[181.5px] bg-[#D9D9D9] mt-10 mb-10"></div>
           </div>
           {/* <Google /> */}
-          <div className="w-fit sm:w-[399px] mx-auto">
-            <p className="text-[18px] text-[#6C6C6C] text-center mt-10 mb-10">
-              Don't have an account?{" "}
-              <span
-                className="text-blue-600 underline cursor-pointer"
-                onClick={() => navigate("/")}
-              >
-                Sign up
-              </span>
-            </p>
-          </div>
+         
         </div>
       </div>
       <div className="w-[60%] lg:block hidden">
