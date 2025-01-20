@@ -3,8 +3,8 @@ import path from "path";
 
 export default async function generateXliff(src, tgt) {
   try {
-    const sourceFilePath = path.resolve("auto-output", "source.txt");
-    const targetFilePath = path.resolve("auto-output", "target.txt");
+    const sourceFilePath = path.resolve("./", "source.txt");
+    const targetFilePath = path.resolve("./", "target.txt");
     const outputFilePath = path.resolve("./", "output.xliff");
 
     const sourceContent = src;

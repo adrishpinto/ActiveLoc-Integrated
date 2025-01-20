@@ -28,6 +28,7 @@ router.post(
   verifyCookie,
   upload.single("file"),
   async (req, res) => {
+    const email = req.email;
     if (!req.file) {
       return res.status(400).send("No file uploaded.");
     }
@@ -38,18 +39,18 @@ router.post(
     if (fileExtension === "txt") {
       blobName += "t.txt";
       let extension = "extension";
-      cache.set(extension, "txt");
+      cache.set(`extension_${email}`, "txt", 600);
     } else if (fileExtension === "pdf") {
       blobName += "p.pdf";
       let extension = "extension";
-      cache.set(extension, "pdf");
+      cache.set(`extension_${email}`, "pdf", 600);
     } else {
       blobName += "d.docx";
       let extension = "extension";
-      cache.set(extension, "docx");
+      cache.set(`extension_${email}`, "docx", 600);
     }
 
-    cache.set("blobName", blobName, 3600);
+    cache.set(`blobName_${email}`, blobName, 3600);
     console.log(blobName);
     const blockBlobClient = containerClient.getBlockBlobClient(blobName);
 
@@ -62,14 +63,14 @@ router.post(
       );
 
       const fileBuffer = fs.readFileSync(req.file.path);
-      cache.set("sourceFile", fileBuffer, 3600);
+      cache.set(`sourceFile_${email}`, fileBuffer, 3600);
 
       fs.unlinkSync(req.file.path);
 
       // const  = blockBlobClient.url;
 
       const blobUrl = cache.get("blobName");
-      console.log("upload cache set to :", blobUrl);
+      console.log(`blobName_${email}`);
 
       res.status(200).json({
         message: "File uploaded successfully.",

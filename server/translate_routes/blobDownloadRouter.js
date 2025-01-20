@@ -12,7 +12,8 @@ const CONNECTION_STRING = process.env.STORAGE_CONNECTION_STRING;
 const CONTAINER_NAME = "target";
 
 router.get("/download", verifyCookie, async (req, res) => {
-  const BLOB_NAME = cache.get("blobName");
+  const email = req.email;
+  const BLOB_NAME = cache.get(`blobName_${email}`);
 
   if (!BLOB_NAME) {
     return res.status(400).send("No blob name found.");
@@ -27,9 +28,15 @@ router.get("/download", verifyCookie, async (req, res) => {
 
   const downloadBlob = async () => {
     try {
-      // Try to download the blob
-      const downloadBlockBlobResponse = await blockBlobClient.download(0);
-      const readableStream = downloadBlockBlobResponse.readableStreamBody;
+      
+      const downloadRes = await blockBlobClient.download(0);
+      const readableStream = downloadRes.readableStreamBody;
+
+      const downloadBuffer = await blockBlobClient.downloadToBuffer();
+      const fileBuffer = downloadBuffer;
+
+      cache.set(`targetFile_${email}`, fileBuffer);
+     
 
       if (readableStream) {
         res.setHeader(
@@ -38,7 +45,7 @@ router.get("/download", verifyCookie, async (req, res) => {
         );
         res.setHeader(
           "Content-Type",
-          downloadBlockBlobResponse.contentType || "application/octet-stream"
+          downloadRes.contentType || "application/octet-stream"
         );
 
         readableStream.pipe(res);
@@ -68,8 +75,9 @@ router.get("/download", verifyCookie, async (req, res) => {
   downloadBlob();
 });
 
-router.get("/extension", async (req, res) => {
-  const BLOB_NAME = cache.get("blobName");
+router.get("/extension", verifyCookie, async (req, res) => {
+  const email = req.email;
+  const BLOB_NAME = cache.get(`blobName_${email}`);
   try {
     if (!BLOB_NAME) {
       return res.status(400).json({ message: "No blob name is given" });

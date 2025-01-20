@@ -22,9 +22,7 @@ app.use(
   })
 );
 const cache = new NodeCache();
-cache.set("blobName", "file1c32dee0-d3d7-11ef-975b-b93bfa00f4f4t.txt");
-cache.set("sourceFile", "empty");
-cache.set("targetFile", "empty");
+
 export { cache };
 
 const PORT = process.env.PORT;

@@ -25,8 +25,8 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 router.post("/translate", verifyCookie, async (req, res) => {
   const { language } = req.body;
-
-  cache.set("language", language);
+  const email = req.email;
+  cache.set(`language_${email}`, language);
 
   if (!sourceUrl || !targetUrl || !language) {
     return res
@@ -40,7 +40,7 @@ router.post("/translate", verifyCookie, async (req, res) => {
         source: {
           sourceUrl,
           filter: {
-            prefix: cache.get("blobName"),
+            prefix: cache.get(`blobName_${email}`),
           },
         },
         targets: [
@@ -64,9 +64,9 @@ router.post("/translate", verifyCookie, async (req, res) => {
 
     res.status(200).send(response.data);
 
-    await delay(60000);
+    await delay(120000);
 
-    const DELETE_BLOB = cache.get("blobName");
+    const DELETE_BLOB = cache.get(`blobName_${email}`);
     const blobServiceClient =
       BlobServiceClient.fromConnectionString(CONNECTION_STRING);
     const containerClient =
@@ -77,9 +77,6 @@ router.post("/translate", verifyCookie, async (req, res) => {
     console.log(`Blob ${BLOB_NAME} deleted successfully.`);
   } catch (error) {
     console.error("Error during translation or blob deletion:", error.message);
-    res
-      .status(500)
-      .send({ error: "Failed to complete the translation or blob deletion." });
   }
 });
 

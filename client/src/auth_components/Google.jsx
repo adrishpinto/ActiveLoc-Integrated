@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleLogin } from "@react-oauth/google";
-import { jwtDecode } from "jwt-decode"; // Install this library if not already installed
+import { jwtDecode } from "jwt-decode"; 
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
