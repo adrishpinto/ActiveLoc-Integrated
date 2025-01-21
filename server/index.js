@@ -10,6 +10,7 @@ import cors from "cors";
 import loginRouter from "./user_routes/loginRoutes.js";
 import cookieParser from "cookie-parser";
 import NodeCache from "node-cache";
+import xlifftext from './xliff2text/xliff2textFunc.js';
 // hosting put secure cookies
 
 dotenv.config();
@@ -47,8 +48,10 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-app.use(cookieParser());
 
+
+app.use(cookieParser());
+app.use("/api", xlifftext)
 app.use("/api", userRouter);
 app.use("/api", loginRouter);
 app.use("/api", blobUploadRouter);

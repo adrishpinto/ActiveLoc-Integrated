@@ -1,0 +1,28 @@
+Fichiers PDF Adobe Acrobat
+Adobe®  Portable  Document  Format  (PDF)  est  un  format  de  fichier  universel  qui
+préserve  toutes  les  polices,  le  formatage,  les  couleurs  et  les  graphiques  de  tout
+document source, quelle que soit l'application et la plate-forme utilisées pour le créer.
+Adobe PDF est un format idéal pour la distribution de documents électroniques, car il
+permet de surmonter les problèmes couramment rencontrés avec le partage de fichiers
+électroniques.
+•
+N'importe qui, n'importe où, peut ouvrir un fichier PDF.
+Tout ce dont vous avez
+besoin  est  le  lecteur  gratuit  Adobe  Acrobat  Reader.
+Les  destinataires  d'autres
+formats de fichiers ne peuvent parfois pas ouvrir les fichiers, car ils ne disposent pas
+des applications utilisées pour créer les documents.
+•
+Les fichiers PDF s'impriment toujours correctement sur n'importe quel appareil d'impression.
+•
+Les fichiers PDF s'affichent toujours exactement tels qu'ils ont été créés, quels que
+soient les polices, les logiciels et les systèmes d'exploitation.
+Les polices et les
+graphiques  ne  sont  pas  perdus  en  raison  d'incompatibilités  de  plate-forme,  de
+logiciel et de version.
+•
+Le logiciel gratuit Acrobat Reader est facile à télécharger et peut être distribué
+gratuitement par n'importe qui.
+•
+Les fichiers PDF compacts sont plus petits que leurs fichiers sources et
+téléchargent une page à la fois pour un affichage rapide sur le Web.

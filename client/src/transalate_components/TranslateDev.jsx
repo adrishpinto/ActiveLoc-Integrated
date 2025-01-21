@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-
+import Xliff2Text from "./Xliff2Text.jsx";
 const API_URL = import.meta.env.VITE_URL;
 
 const TranslateDev = () => {
@@ -169,9 +169,21 @@ const TranslateDev = () => {
   return (
     <div>
       <div className="text-5xl text-center mt-20" onClick={() => cookieData}>
-        Welcome, {name}{" "}
+        {name ? `Welcome, ${name}` : "Please Login first to access modules"}
       </div>
-      <div className="sm:w-[80%] w-[90%] lg:w-[50%] border border-black rounded-lg bg-slate-50 shadow-lg mx-auto mt-20 p-10 flex flex-col items-center">
+      <div className="sm:w-[80%] w-[90%] lg:w-[50%] border border-black rounded-lg bg-slate-50 shadow-lg mx-auto mt-20 p-10 pt-5 flex flex-col items-center">
+        <div>
+          <h1 className="mb-5 text-3xl font-semibold text-center">
+            Translation Module
+          </h1>
+          <div className="mb-10 border bg-slate-300 p-2 rounded">
+            <p>1. Choose a file and click on upload button</p>
+            <p>2. Click on translate and then click on download</p>
+            <p>3. Once file is downloaded then xliff download will work </p>
+            <p>4. Using the downloaded xliff you can use xliff module</p>
+            <p>5. Allowed files - pdf, txt, docx</p>
+          </div>
+        </div>
         <div className="w-fit">
           <input
             type="file"
@@ -776,6 +788,8 @@ const TranslateDev = () => {
           Xliff Download
         </button>
       </div>
+
+      <Xliff2Text />
     </div>
   );
 };

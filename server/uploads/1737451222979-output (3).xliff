@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+  <file id="xliff_translate" >
+       <unit id="1">
+        <segment>
+          <source>Adobe Acrobat PDF Files</source>
+          <target>Fichiers PDF Adobe Acrobat</target>
+        </segment>
+      </unit>
+      <unit id="2">
+        <segment>
+          <source>Adobe® Portable Document Format (PDF) is a universal file format that preserves all</source>
+          <target>Adobe®  Portable  Document  Format  (PDF)  est  un  format  de  fichier  universel  qui</target>
+        </segment>
+      </unit>
+      <unit id="3">
+        <segment>
+          <source>of  the  fonts,  formatting,  colours  and  graphics  of  any  source  document,  regardless  of</source>
+          <target>préserve  toutes  les  polices,  le  formatage,  les  couleurs  et  les  graphiques  de  tout</target>
+        </segment>
+      </unit>
+      <unit id="4">
+        <segment>
+          <source>the application and platform used to create it.</source>
+          <target>document source, quelle que soit l'application et la plate-forme utilisées pour le créer.</target>
+        </segment>
+      </unit>
+      <unit id="5">
+        <segment>
+          <source>Adobe PDF is an ideal format for electronic document distribution as it overcomes the</source>
+          <target>Adobe PDF est un format idéal pour la distribution de documents électroniques, car il</target>
+        </segment>
+      </unit>
+      <unit id="6">
+        <segment>
+          <source>problems commonly encountered with electronic file sharing.</source>
+          <target>permet de surmonter les problèmes couramment rencontrés avec le partage de fichiers</target>
+        </segment>
+      </unit>
+      <unit id="7">
+        <segment>
+          <source>• Anyone, anywhere can open a PDF file.</source>
+          <target>électroniques.</target>
+        </segment>
+      </unit>
+      <unit id="8">
+        <segment>
+          <source>All you need is the free Adobe Acrobat</source>
+          <target>•</target>
+        </segment>
+      </unit>
+      <unit id="9">
+        <segment>
+          <source>Reader.</source>
+          <target>N'importe qui, n'importe où, peut ouvrir un fichier PDF.</target>
+        </segment>
+      </unit>
+      <unit id="10">
+        <segment>
+          <source>Recipients  of  other  file  formats  sometimes  can't  open  files  because  they</source>
+          <target>Tout ce dont vous avez</target>
+        </segment>
+      </unit>
+      <unit id="11">
+        <segment>
+          <source>don't have the applications used to create the documents.</source>
+          <target>besoin  est  le  lecteur  gratuit  Adobe  Acrobat  Reader.</target>
+        </segment>
+      </unit>
+      <unit id="12">
+        <segment>
+          <source>• PDF files always print correctly on any printing device.</source>
+          <target>Les  destinataires  d'autres</target>
+        </segment>
+      </unit>
+      <unit id="13">
+        <segment>
+          <source>• PDF  files  always  display  exactly  as  created,  regardless  of  fonts,  software,  and</source>
+          <target>formats de fichiers ne peuvent parfois pas ouvrir les fichiers, car ils ne disposent pas</target>
+        </segment>
+      </unit>
+      <unit id="14">
+        <segment>
+          <source>operating systems.</source>
+          <target>des applications utilisées pour créer les documents.</target>
+        </segment>
+      </unit>
+      <unit id="15">
+        <segment>
+          <source>Fonts, and graphics are not lost due to platform, software, and</source>
+          <target>•</target>
+        </segment>
+      </unit>
+      <unit id="16">
+        <segment>
+          <source>version incompatibilities.</source>
+          <target>Les fichiers PDF s'impriment toujours correctement sur n'importe quel appareil d'impression.</target>
+        </segment>
+      </unit>
+      <unit id="17">
+        <segment>
+          <source>• The  free  Acrobat  Reader  is  easy  to  download  and  can  be  freely  distributed  by</source>
+          <target>•</target>
+        </segment>
+      </unit>
+      <unit id="18">
+        <segment>
+          <source>anyone.</source>
+          <target>Les fichiers PDF s'affichent toujours exactement tels qu'ils ont été créés, quels que</target>
+        </segment>
+      </unit>
+      <unit id="19">
+        <segment>
+          <source>• Compact   PDF   files   are   smaller   than   their   source   files   and   download   a</source>
+          <target>soient les polices, les logiciels et les systèmes d'exploitation.</target>
+        </segment>
+      </unit>
+      <unit id="20">
+        <segment>
+          <source>page at a time for fast display on the Web.</source>
+          <target>Les polices et les</target>
+        </segment>
+      </unit>
+      <unit id="21">
+        <segment>
+          <source></source>
+          <target>graphiques  ne  sont  pas  perdus  en  raison  d'incompatibilités  de  plate-forme,  de</target>
+        </segment>
+      </unit>
+      <unit id="22">
+        <segment>
+          <source></source>
+          <target>logiciel et de version.</target>
+        </segment>
+      </unit>
+      <unit id="23">
+        <segment>
+          <source></source>
+          <target>•</target>
+        </segment>
+      </unit>
+      <unit id="24">
+        <segment>
+          <source></source>
+          <target>Le logiciel gratuit Acrobat Reader est facile à télécharger et peut être distribué</target>
+        </segment>
+      </unit>
+      <unit id="25">
+        <segment>
+          <source></source>
+          <target>gratuitement par n'importe qui.</target>
+        </segment>
+      </unit>
+      <unit id="26">
+        <segment>
+          <source></source>
+          <target>•</target>
+        </segment>
+      </unit>
+      <unit id="27">
+        <segment>
+          <source></source>
+          <target>Les fichiers PDF compacts sont plus petits que leurs fichiers sources et</target>
+        </segment>
+      </unit>
+      <unit id="28">
+        <segment>
+          <source></source>
+          <target>téléchargent une page à la fois pour un affichage rapide sur le Web.</target>
+        </segment>
+      </unit>
+      </file>
+</xliff>
